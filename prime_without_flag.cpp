@@ -1,11 +1,10 @@
-# Programs-of-CPP
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
     int n,i;
     cin>>n;
-    for(i=2;i<sqrt(n+1);i++)
+    for(i=2;i<n/2;i++)
     {
             if(n%i==0)
             {
@@ -17,7 +16,7 @@ int main()
     cout<<n<<"is prime";
     return 0;
 }
-//another type
+// another method
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -36,14 +35,14 @@ int main()
     cout<<n<<"is prime";
     return 0;
 }
-//3rd type
+//3rd method
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
     int n,i;
     cin>>n;
-    for(i=2;i<n/2;i++)
+    for(i=2;i<sqrt(n);i++)
     {
             if(n%i==0)
             {
